@@ -25,7 +25,7 @@ export { default as News } from "./News/News";
 export { default as Price } from "./Price/Price";
 
 // Services
-// export { default as Services } from "./Services/Services";
+// 
 
 // NotFound
 export { default as NotFound } from "./NotFound/NotFound";
