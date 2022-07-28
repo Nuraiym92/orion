@@ -1,0 +1,150 @@
+@import "../../scss/vars";
+@import "../../scss/fonts";
+
+.header {
+  padding-top: 1rem;
+  background-color: $primary-dark;
+  color: #fff;
+
+  &__inner {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    min-width: 10%;
+    // height: 6rem;
+    margin-right: 2rem;
+    // background-size: contain;
+
+    &-link {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1rem;
+
+      font-size: 1.5rem;
+      font-family: "Audiowide Regular", sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      color: #fff;
+      border-radius: 8x;
+    }
+  }
+
+  &__nav {
+    max-width: 85%;
+    width: 100%;
+  }
+
+  // Nav menu (ul)
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-weight: 500;
+    // letter-spacing: 1.1px;
+
+    li {
+      margin: 0 1rem;
+    }
+
+    a {
+      padding: 7px 5px 5px 7px;
+
+      color: #fff;
+      font-size: 1rem;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      // border-bottom: 2px solid transparent;
+      border-right: 2px solid transparent;
+      transition: 0.3s;
+
+      &:hover {
+        border-color: #fff;
+      }
+      &.active {
+        border-right: 4px solid transparent;
+        border-color: $font-color;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    // Dropdown
+    button {
+      padding: 7px 5px 5px 7px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-right: 2px solid transparent;
+      transition: 0.3s;
+      background: none;
+
+      border: none;
+      color: #fff;
+
+      &:hover {
+        border-color: #fff;
+      }
+      &.active {
+        border-right: 4px solid transparent;
+        border-color: $font-color;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    .dropdown {
+      a button {
+        color: #fff;
+      }
+
+      a.active button {
+        color: #000;
+      }
+    }
+
+    div[role="menu"] {
+      display: flex;
+      flex-direction: column;
+      display: none;
+      margin-top: 12px;
+
+      a.active {
+        background: none;
+        color: #fff;
+      }
+    }
+
+    div[role="menu"].visible {
+      position: absolute;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      display: block;
+
+      // background-color: rgba(7, 7, 7, 0.562);
+      background-color: rgba(182, 0, 0, 0.562);
+
+      a {
+        cursor: pointer;
+      }
+    }
+    // End dropdown =====
+  }
+
+  &__link {
+    border: 1px solid black;
+  }
+}

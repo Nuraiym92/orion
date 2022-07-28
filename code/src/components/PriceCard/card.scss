@@ -1,0 +1,99 @@
+@import "../../scss/vars";
+@import "../../scss/fonts";
+
+.price-card {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  border: 1px solid rgb(193, 193, 193);
+
+  &__inner {
+  }
+
+  &__info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  &__user {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+
+  &__text {
+    font-size: 15px;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    color: #fff;
+
+    margin-top: 20px;
+    background-color: #03a9f5;
+    text-align: center;
+  }
+
+  &__age {
+    font-size: 28px;
+  }
+
+  &__age1 {
+    font-size: 50px;
+  }
+
+  &__age2 {
+    font-size: 19px;
+  }
+
+  &__plan {
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    margin-top: 1px;
+  }
+
+  &__item {
+    text-align: center;
+    margin-top: 15px;
+
+    border-bottom: 1px dashed #dedede;
+    padding-bottom: 16px;
+    color: rgb(118, 117, 117);
+  }
+
+  &__none {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 16px;
+    color: rgb(118, 117, 117);
+  }
+}
+
+.buttonPrice {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #03a9f5;
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}

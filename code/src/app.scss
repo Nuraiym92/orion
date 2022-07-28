@@ -1,0 +1,11 @@
+@import "./scss/main";
+
+.app {
+  max-width: 80%;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  margin: 0 auto;
+
+  scroll-behavior: smooth;
+}

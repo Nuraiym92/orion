@@ -1,0 +1,12 @@
+.price-card__wrapper {
+  display: flex;
+  margin-top: 70px;
+
+  .price-card {
+    margin-right: 30px;
+
+    &__text {
+      padding: 10px 15px;
+    }
+  }
+}

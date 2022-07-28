@@ -1,0 +1,73 @@
+@import "../../scss/fonts";
+@import "../../scss/vars";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem;
+  background-color: $primary-dark;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+
+  &__logo {
+    text-decoration: none;
+    font-size: 34px;
+    font-family: "Audiowide Regular";
+  }
+
+  &__inner {
+    padding-top: 35px;
+
+    // Блок Контакты
+    &-contacts {
+      max-width: 20%;
+      width: 100%;
+
+      .contacts {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: left;
+      }
+    }
+
+    // Блок Ссылки
+    &-links {
+      max-width: 20%;
+      width: 100%;
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-evenly;
+        ul {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    // Блок Новости
+    &-news {
+      text-align: left;
+      max-width: 20%;
+      width: 100%;
+
+      .news {
+        margin-bottom: 10px;
+      }
+    }
+
+    // Блок Обновления
+    &-mail {
+      max-width: 20%;
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

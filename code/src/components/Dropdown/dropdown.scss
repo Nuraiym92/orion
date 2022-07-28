@@ -1,0 +1,12 @@
+.dropdown {
+  div[role="menu"] {
+    display: none;
+    // visibility: hidden;
+  }
+
+  div[role="menu"].visible {
+    // visibility: visible;
+    display: block;
+    display: flex;
+  }
+}
